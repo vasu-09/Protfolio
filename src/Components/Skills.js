@@ -7,7 +7,7 @@ const skillsData = [
   { name: 'HTML5', value: 75, variant: 'danger' },
   { name: 'CSS3', value: 75, variant: 'primary' },
   { name: 'jQuery', value: 50, variant: 'dark' },
-  { name: 'Ract', value: 75, variant: 'info' },
+  { name: 'React', value: 75, variant: 'info' },
   { name: 'Spring Boot', value: 95, variant: 'secondary' },
   { name: 'Spring Security', value: 95, variant: 'success' },
 ];
