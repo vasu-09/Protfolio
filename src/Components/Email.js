@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   
 
   const form = useRef();
+  const [submitted, setSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,6 +16,10 @@ const ContactForm = () => {
       })
       .then(
         () => {
+            setSubmitted(true);
+          setTimeout(() => {
+            window.location.reload(); // Reload the page after 2 seconds
+          }, 2000);
           console.log('SUCCESS!');
         },
         (error) => {
@@ -41,6 +46,7 @@ const ContactForm = () => {
         <textarea name="message" className="form-control" rows="5" required></textarea>
       </div>
       <button type="submit" className="btn btn-primary mt-3">Send</button>
+      {submitted && <p className="text-success mt-3">Message delivered!</p>}
     </form>
   </div>
   <style>
