@@ -3,6 +3,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import avatar from './avatar.png';
 import { RiFacebookCircleLine, RiLinkedinBoxLine, RiGithubFill, RiInstagramLine } from "react-icons/ri";
 import { BsArrowDownCircleFill } from "react-icons/bs";
+import AdsterraAd from "./AdsterraAd";
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
                 <a href="https://www.linkedin.com/in/srinivas-gurazala-a30094212/" style={{ fontSize: '35px' }}><RiLinkedinBoxLine className="social-icon" /></a>
                 <a href="https://github.com/vasu-09" style={{ fontSize: '35px' }}><RiGithubFill className="social-icon" /></a>
                 <a href="https://www.instagram.com/tricks_and_codes/" style={{ fontSize: '35px' }}><RiInstagramLine className="social-icon" /></a>
+              </div>
+              <div className="mt-4">
+                <AdsterraAd />
               </div>
             </Col>
             <Col md={6} className='img-col'>
