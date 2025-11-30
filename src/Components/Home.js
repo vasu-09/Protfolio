@@ -3,7 +3,9 @@ import { Button, Col, Row } from 'react-bootstrap';
 import avatar from './avatar.png';
 import { RiFacebookCircleLine, RiLinkedinBoxLine, RiGithubFill, RiInstagramLine } from "react-icons/ri";
 import { BsArrowDownCircleFill } from "react-icons/bs";
-import AdsterraAd from "./AdsterraAd";
+
+const SMARTLINK_URL =
+  "https://www.effectivegatecpm.com/ixvhvqk4fv?key=fb6f3da617c5c62200d7528d3b32050e";
 
 const Home = () => {
   return (
@@ -23,8 +25,15 @@ const Home = () => {
                 <a href="https://github.com/vasu-09" style={{ fontSize: '35px' }}><RiGithubFill className="social-icon" /></a>
                 <a href="https://www.instagram.com/tricks_and_codes/" style={{ fontSize: '35px' }}><RiInstagramLine className="social-icon" /></a>
               </div>
-              <div className="mt-4">
-                <AdsterraAd />
+             <div className="mt-4">
+                <Button
+                  variant="warning"
+                  href={SMARTLINK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Sponsored Offers
+                </Button>
               </div>
             </Col>
             <Col md={6} className='img-col'>
